@@ -9,6 +9,7 @@ class RoomsController < ApplicationController
     @room = Room.new
     @single_room = Room.find(params[:id])
     @message = Message.new
+    @messages = @singler_room.message
 
     render "index"
   end
